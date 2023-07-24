@@ -144,3 +144,11 @@ shap.summary_plot(shap_values, input_df, plot_type="bar")
 fig = plt.gcf()
 # Display the Matplotlib figure using Streamlit
 st.pyplot(fig, bbox_inches='tight')
+
+
+
+# FOR deployment:
+# we need the requirements.txt:
+#     get it using pip install pipreqs
+#     then pipreqs --encoding=utf8
+# everything should be run inside the folder where the app is present.
