@@ -3,3 +3,4 @@ numpy==1.25.1
 pandas==1.4.3
 shap==0.41.0
 streamlit==1.21.0
+python==3.9.12
