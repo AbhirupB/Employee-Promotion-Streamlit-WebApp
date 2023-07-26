@@ -12,4 +12,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . /app/
 
 # Start the Streamlit app
-CMD ["streamlit", "run", "emp_promo_streamlitapppypy.py"]
+CMD ["streamlit", "run", "emp_promo_streamlitapp.py"]
