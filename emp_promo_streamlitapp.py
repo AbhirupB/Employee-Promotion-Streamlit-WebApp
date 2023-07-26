@@ -33,11 +33,6 @@ education_mapping = {
     'Master/PhD/PostDoc': 2
 }
 
-# kpi_mapping = {
-#     'Yes': 1,
-#     'No': 0
-# }
-
 award_mapping = {
     'Yes': 1,
     'No': 0
