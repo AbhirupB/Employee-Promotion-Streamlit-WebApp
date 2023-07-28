@@ -104,7 +104,7 @@ def user_input_features():
 input_df = user_input_features()
 
 # Reading the test dataset
-promotion_test = pd.read_csv(r"D:\GitHub\EmployeePromotionProject\data\test_data_final.csv")
+promotion_test = pd.read_csv(r"D:/GitHub/EmployeePromotionProject/data/test_data_final.csv")
 
 # Concatenating user data with the test dataset
 df = pd.concat([input_df, promotion_test], axis=0)
@@ -113,7 +113,7 @@ df = pd.concat([input_df, promotion_test], axis=0)
 df = df[:1]
 
 # Loading the saved model
-load_xgboost = pickle.load(open('D:\GitHub\EmployeePromotionProject\empPromoModel1.pkl', 'rb'))
+load_xgboost = pickle.load(open('empPromoModel1.pkl', 'rb'))
 
 # Applying the model for prediction
 prediction = load_xgboost.predict(input_df)
