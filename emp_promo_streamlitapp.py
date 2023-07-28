@@ -113,7 +113,7 @@ df = pd.concat([input_df, promotion_test], axis=0)
 df = df[:1]
 
 # Loading the saved model
-load_xgboost = pickle.load(open('D:\EmployeePromotionProject\empPromoModel1.pkl', 'rb'))
+load_xgboost = pickle.load(open('D:\EmployeePromotionProject\\empPromoModel1.pkl', 'rb'))
 
 # Applying the model for prediction
 prediction = load_xgboost.predict(input_df)
