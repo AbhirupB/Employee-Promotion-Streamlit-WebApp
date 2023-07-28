@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 import pickle
-# import shap
+import shap
 
 # Creating a title for our project
 st.title("Employee Promotion Prediction")
@@ -129,16 +129,16 @@ st.subheader('Prediction Probability')
 st.write('Based on the data,\nyou have {0:.2f}% chance of being promoted.'.format(prediction_probability[0][1] * 100))
 
 
-# explainer = shap.TreeExplainer(load_xgboost)
-# shap_values = explainer.shap_values(input_df)
+explainer = shap.TreeExplainer(load_xgboost)
+shap_values = explainer.shap_values(input_df)
 
 
-# plt.title('Feature importance based on SHAP values (Bar)')
-# shap.summary_plot(shap_values, input_df, plot_type="bar")
-# # Get the current Matplotlib figure object
-# fig = plt.gcf()
-# # Display the Matplotlib figure using Streamlit
-# st.pyplot(fig, bbox_inches='tight')
+plt.title('Feature importance based on SHAP values (Bar)')
+shap.summary_plot(shap_values, input_df, plot_type="bar")
+# Get the current Matplotlib figure object
+fig = plt.gcf()
+# Display the Matplotlib figure using Streamlit
+st.pyplot(fig, bbox_inches='tight')
 
 
 
