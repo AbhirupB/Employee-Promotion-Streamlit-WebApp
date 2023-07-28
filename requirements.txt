@@ -1,6 +1,5 @@
 matplotlib==3.5.3
 numpy==1.24.4
 pandas==1.4.3
-shap==0.42.0
 streamlit==1.21.0
 xgboost==1.7.5
