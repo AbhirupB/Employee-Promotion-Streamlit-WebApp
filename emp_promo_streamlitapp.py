@@ -104,7 +104,7 @@ def user_input_features():
 input_df = user_input_features()
 
 # Reading the test dataset
-path = "D:\GitHub\EmployeePromotionProject\data\test_data_final.csv"
+path = "D:\GitHub\EmployeePromotionProject\data\\test_data_final.csv"
 promotion_test = pd.read_csv(path)
 
 # Concatenating user data with the test dataset
