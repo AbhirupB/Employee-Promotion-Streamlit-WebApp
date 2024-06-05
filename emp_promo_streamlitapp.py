@@ -4,6 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 import pickle
+
 import shap
 
 # Creating a title for our project
@@ -100,6 +101,7 @@ def user_input_features():
 
     features = pd.DataFrame(data, index=[0])
     return features
+
 
 input_df = user_input_features()
 
