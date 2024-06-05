@@ -106,7 +106,7 @@ def user_input_features():
 input_df = user_input_features()
 
 # Reading the test dataset
-promotion_test = pd.read_csv("data/test_data_final.csv")
+promotion_test = pd.read_csv("data/test_data_final.csv", encoding='latin1')
 
 # Concatenating user data with the test dataset
 df = pd.concat([input_df, promotion_test], axis=0)
